@@ -1,4 +1,4 @@
-name: Jacky Zhao
+name: Sean X.
 enableToc: true
 openToc: false
 enableLinkPreview: true
@@ -9,21 +9,25 @@ enableCallouts: true
 enableSPA: true
 enableFooter: true
 enableContextualBacklinks: true
-enableRecentNotes: false
+enableRecentNotes: true
 enableGitHubEdit: true
 enableMermaid: true
-GitHubLink: https://github.com/jackyzha0/quartz/tree/hugo/content
+GitHubLink: https://github.com/sean-7777/sean-7777.github.io/tree/hugo/content
 search:
-  enableSemanticSearch: false
-  operandApiKey: "REPLACE-WITH-YOUR-OPERAND-API-KEY"
-  operandIndexId: "REPLACE-WITH-YOUR-OPERAND-INDEX-ID"
+  enableSemanticSearch: true
+  operandApiKey: "duhjbpfc343xevp099le9kfxvu1ficy6"
+  operandIndexId: "41a2r0p75qgl4jaf"
 description:
-  Host your second brain and digital garden for free. Quartz features extremely fast full-text search,
-  Wikilink support, backlinks, local graph, tags, and link previews.
+  Hello. You seem to have stumbled across my digital garden. :D
+  I write about stuff. You can read it if you want.
 page_title:
-  "🪴 Quartz 3.3"
+  "sean's garden"
 links:
   - link_name: Twitter
-    link: https://twitter.com/_jzhao
+    link: https://twitter.com/s_ambigious
   - link_name: GitHub
-    link: https://github.com/jackyzha0
+    link: https://github.com/sean-7777
+  - link_name: Discord
+    link: https://discordapp.com/users/712388214937354281
+  - link_name: Replit
+    link: https://replit.com/@lightningrock2/
