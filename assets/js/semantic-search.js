@@ -19,12 +19,12 @@ async function searchContents(query) {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
-      "parent_id": `${indexId}`,
       Authorization: `Key ${apiKey}`,
     },
     body: JSON.stringify({
       query: query,
       limit: 10,
+      parent_id: `${indexId}`,
     }),
     mode: 'no-cors',
   })
