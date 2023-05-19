@@ -15,7 +15,7 @@ function parseSearchResults(searchResults) {
 }
 
 async function searchContents(query) {
-  const result = await fetch("mcp.operand.ai/operand.v1.OperandService/Search", {
+  const result = await fetch("https://mcp.operand.ai/operand.v1.OperandService/Search", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
