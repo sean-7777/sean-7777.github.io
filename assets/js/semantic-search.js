@@ -15,12 +15,12 @@ function parseSearchResults(searchResults) {
 }
 
 async function searchContents(query) {
-  const result = await fetch("https://api.operand.ai/operand.v1.ObjectService/SearchWithin", {
+  const result = await fetch("mcp.operand.ai/operand.v1.OperandService/Search", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
-      Authorization: `${apiKey}`,
-      "Operand-Index-ID": `${indexId}`,
+      "parent_id": `${indexId}`,
+      Authorization: `Key ${apiKey}`,
     },
     body: JSON.stringify({
       query: query,
