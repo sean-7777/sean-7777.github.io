@@ -15,7 +15,7 @@ function parseSearchResults(searchResults) {
 }
 
 async function searchContents(query) {
-  const result = await fetch("https://mcp.operand.ai/operand.v1.OperandService/Search", {
+  const result = await fetch(`https://corsproxy.io/?${encodeURIComponent("https://mcp.operand.ai/operand.v1.OperandService/Search")}`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -26,18 +26,12 @@ async function searchContents(query) {
       maxResults: 10,
       parent_id: indexId,
     }),
-    mode: "no-cors",
   })
   if (result.ok) {
     return parseSearchResults(await result.json())
   } else {
     console.error(result)
   }
-  console.log(JSON.stringify({
-      query: query,
-      limit: 10,
-      parent_id: indexId,
-    }))
 }
 
 function debounce(func, timeout = 200) {
