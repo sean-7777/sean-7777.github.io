@@ -24,15 +24,20 @@ async function searchContents(query) {
     body: JSON.stringify({
       query: query,
       limit: 10,
-      parent_id: `${indexId}`,
+      parent_id: indexId,
     }),
-    mode: 'no-cors',
+    mode: "no-cors",
   })
   if (result.ok) {
     return parseSearchResults(await result.json())
   } else {
     console.error(result)
   }
+  console.log(JSON.stringify({
+      query: query,
+      limit: 10,
+      parent_id: indexId,
+    }))
 }
 
 function debounce(func, timeout = 200) {
