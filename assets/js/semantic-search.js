@@ -23,7 +23,7 @@ async function searchContents(query) {
     },
     body: JSON.stringify({
       query: query,
-      limit: 10,
+      maxResults: 10,
       parent_id: indexId,
     }),
     mode: "no-cors",
