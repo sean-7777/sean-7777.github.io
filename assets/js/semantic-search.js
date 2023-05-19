@@ -26,6 +26,7 @@ async function searchContents(query) {
       query: query,
       limit: 10,
     }),
+    mode: 'no-cors',
   })
   if (result.ok) {
     return parseSearchResults(await result.json())
